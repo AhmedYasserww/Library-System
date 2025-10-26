@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/utils/app_color.dart';
+import 'package:library_system/core/utils/styles.dart';
 class PageViewItem extends StatelessWidget {
   const PageViewItem({
     super.key,
@@ -29,7 +28,7 @@ class PageViewItem extends StatelessWidget {
         const SizedBox(height: 30,),
         Text(
           title,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600,color:AppColors.primaryColor),
+          style: Styles.textStyleSemiBold20
         ),
         const SizedBox(
           height: 30,
@@ -39,8 +38,7 @@ class PageViewItem extends StatelessWidget {
           child: Text(
             subtitle,
             textAlign: TextAlign.center,
-            style:  const TextStyle(
-                fontSize: 14, fontWeight: FontWeight.w500, color:AppColors.primaryColor ),
+            style:  Styles.textStyleMeduim14
           ),
         ),
       ],

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: AppColors.backgroundColor,
-        textTheme: GoogleFonts.interTextTheme(),
+        textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       ),
       onGenerateRoute: onGenerateRoutes,
       initialRoute: OnBoardingView.routeName,

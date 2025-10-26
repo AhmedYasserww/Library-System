@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:library_system/core/utils/app_color.dart';
+import 'package:library_system/core/utils/styles.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key,
     required this.text,
@@ -19,7 +20,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           color:  AppColors.buttonColor,
         ),
-        child:  Center(child: Text(text,style: const TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.w500),)),
+        child:  Center(child: Text(text,style: Styles.textStyleMedium18.copyWith(color: Colors.black),)),
       ),
     );
   }
