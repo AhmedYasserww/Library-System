@@ -23,22 +23,26 @@ class NavigationBarBodyState extends State<NavigationBarBody> {
    SizedBox(),
     SizedBox(),
    SizedBox(),
+    SizedBox()
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+
         onTap:changeTab,
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.backgroundColor,
         currentIndex: selectedIndex,
         selectedItemColor: AppColors.buttonColor,
         unselectedItemColor: const Color(0xff67687E),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(Icons.local_library_rounded), label: "library"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "favourite"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "profile"),
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "home"),
+          BottomNavigationBarItem(icon: Icon(Icons.local_library_outlined), label: "library"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border_outlined), label: "favourite"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Cart"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "profile"),
         ],
       ),
       backgroundColor: Colors.white,
