@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:library_system/core/helper_functions/on_generate_routes.dart';
 import 'package:library_system/core/utils/app_color.dart';
+import 'package:library_system/features/navigation_bar/presentation/views/button_nav_bar_view.dart';
 import 'package:library_system/features/on_boarding/presentation/views/on_boarding_view.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       ),
       onGenerateRoute: onGenerateRoutes,
-      initialRoute: OnBoardingView.routeName,
+      initialRoute: ButtonNavBarView.routeName,
     );
   }
 }

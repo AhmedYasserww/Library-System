@@ -17,7 +17,7 @@ class PageViewItem extends StatelessWidget {
       children: [
         SizedBox(
           width: double.infinity,
-          height: MediaQuery.of(context).size.height * 0.5,
+          height: MediaQuery.of(context).size.height * 0.44,
           child: Center(
             child: Image.asset(
                         image,
@@ -31,7 +31,7 @@ class PageViewItem extends StatelessWidget {
           style: Styles.textStyleSemiBold20
         ),
         const SizedBox(
-          height: 30,
+          height: 24,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 37),

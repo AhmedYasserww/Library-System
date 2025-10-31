@@ -25,8 +25,9 @@ class OnBoardingPageView extends StatelessWidget {
           image: Assets.imagesOnboardingImage2,
         ),
          PageViewItem(
-          title: "Wonderful User Experience",
-          subtitle: "Start exploring now and experience the convenience of online shopping at its best.",
+          title: "Find Any Book Instantly",
+          subtitle: "Search through thousands of titles in seconds."
+          " Discover new favorites and access the knowledge you need, anytime you want.",
           image: Assets.imagesOnboardingImage3,
         ),
       ],

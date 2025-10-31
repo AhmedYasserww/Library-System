@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:library_system/core/utils/styles.dart';
 import 'package:library_system/core/widgets/custom_button.dart';
+import 'package:library_system/features/auth/presentation/views/sign_up_view.dart';
 import 'package:library_system/features/auth/presentation/views/widgets/custom_email_text_field.dart';
 import 'package:library_system/features/auth/presentation/views/widgets/custom_navigate_to_register.dart';
 import 'package:library_system/features/auth/presentation/views/widgets/custom_password_text_field.dart';
@@ -74,7 +75,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                       visible: visible,
                       toggleVisibility: toggleVisibility,
                     ),
-                    const SizedBox(height: 24),
+                    const SizedBox(height: 32),
                     CustomButton(
                       text: "Log in",
                       onTap: (){
@@ -84,7 +85,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                     const SizedBox(height: 14),
                     CustomNavigateToRegister(
                       onPressed: () {
-                      //  Navigator.of(context).pushNamed(SignUpView.routeName);
+                        Navigator.of(context).pushNamed(SignUpView.routeName);
                       },
                     ),
                   ],

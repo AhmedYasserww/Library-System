@@ -36,6 +36,25 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
     return Column(
       children: [
         const SizedBox(height: 30,),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushReplacementNamed(context, SignInView.routeName);
+              },
+              child: const Text(
+                "Skip",
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.buttonColor,
+                ),
+              ),
+            ),
+          ),
+        ),
        Expanded(
           child: OnBoardingPageView(
             pageController: pageController,
@@ -52,7 +71,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           ),
           dotsCount: 3,
         ),
-        const SizedBox(height: 29,),
+        const SizedBox(height: 24,),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: CustomButton(
