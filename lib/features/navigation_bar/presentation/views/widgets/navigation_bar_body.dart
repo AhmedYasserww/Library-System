@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:library_system/features/favorite/presentation/views/favorite_view.dart';
 import 'package:library_system/features/home/presentation/views/home_view.dart';
 import 'package:library_system/features/library/presentation/views/library_view.dart';
 import '../../../../../core/utils/app_color.dart';
@@ -22,7 +23,7 @@ class NavigationBarBodyState extends State<NavigationBarBody> {
   final List<Widget> views = const [
     HomeView(),
    LibraryView(),
-    SizedBox(),
+    FavoriteView(),
    SizedBox(),
     SizedBox()
   ];

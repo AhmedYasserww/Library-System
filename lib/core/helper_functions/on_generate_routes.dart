@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:library_system/features/auth/presentation/views/sign_in_view.dart';
 import 'package:library_system/features/auth/presentation/views/sign_up_view.dart';
+import 'package:library_system/features/favorite/presentation/views/favorite_view.dart';
 import 'package:library_system/features/home/presentation/views/home_view.dart';
 import 'package:library_system/features/library/presentation/views/library_view.dart';
 import 'package:library_system/features/navigation_bar/presentation/views/button_nav_bar_view.dart';
@@ -23,6 +24,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
         return MaterialPageRoute(builder: (context) => const ButtonNavBarView());
     case LibraryView.routeName:
       return MaterialPageRoute(builder: (context) => const LibraryView());
+    case FavoriteView.routeName:
+      return MaterialPageRoute(builder: (context) => const FavoriteView());
 
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
