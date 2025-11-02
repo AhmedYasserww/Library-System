@@ -10,7 +10,9 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.hintText,
     this.keyboardType,
-    this.labelText
+    this.labelText,
+    this.fillColor,
+    this.filledColor = false
   });
 
 
@@ -24,6 +26,8 @@ class CustomTextField extends StatelessWidget {
   final String? hintText ;
   final Widget? labelText;
   final TextInputType? keyboardType;
+  final Color? fillColor;
+  final bool filledColor;
   @override
   Widget build(BuildContext context) {
 
@@ -37,7 +41,8 @@ class CustomTextField extends StatelessWidget {
         validator: validator,
         decoration:InputDecoration(
             label:labelText ,
-
+filled:filledColor ,
+fillColor: fillColor,
             prefixIcon:prefixIcon ,
             prefixIconColor: AppColors.buttonColor,
             hintText:hintText ,
